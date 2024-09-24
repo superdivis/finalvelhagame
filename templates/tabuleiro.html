@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <title>Final Velha VII</title>
+        <link rel="shortcut icon" href="../static/img/Meteor.ico">
+        <script src="{{ url_for('static',    filename='js/util.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/main.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/servicos_rest.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/ff7.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/final_velha.js') }}" defer></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/ff.css') }}" media="screen" />
+        <meta charset="utf-8">
+        </head>
+
+    <body class="fundo">
+
+    <formaction="" id="formulario_de_captura">
+
+    <img style="display: none;"  id = "right" class = "extra" src = "https://www.dropbox.com/s/1pq4d1ksjv3tuoz/FF7Cursor.png?raw=1">
+
+<div class="margem_index">
+        <h1 class="bordaFormulario central">Final Velha VII</h1>
+
+        <div id="btn_escolha" style="display: none;">
+            <button id="btn_espada" class="espada_button" ></button>     
+            <em id="contador_1" name="contador_1" class="contador_1">0</em>
+            <button id="btn_escudo" class="escudo_button" ></button>        
+            <em id="contador_2" class="contador_2">0</em>
+        </div>
+        
+    <div id="board" class="grid-container campoBorda" style="display: none;">
+                <button onclick="this.disabled = true;" id="btn_0" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_1" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_2" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_3" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_4" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_5" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_6" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_7" class="form_button"></button>
+                <button onclick="this.disabled = true;" id="btn_8" class="form_button"></button>
+    </div>
+
+        <div  class="fonte">
+            <aside id="aside">
+                <ul id="menu">
+                    <li id="btn_solo" number="0">Solo</li>
+                    <li id="btn_multiplayer" number="1">Multiplayer</li>
+                    <li onclick=location.href="{{ url_for('pontos')}}" number="2">Placar</li>
+                    <li onclick=location.href="{{ url_for('cadastro_novo')}}" id="btn_novo" number ="3">Novo</li>
+                    <li onclick=location.href="{{ url_for('index')}}" id="btn_voltar" number ="4" >Voltar</li>
+                    
+                </ul>
+            </aside>    
+        </div>
+</div>
+        
+
+</body>
+</html>
+

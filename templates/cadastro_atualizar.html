@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Final Velha VII</title>
+        <link rel="shortcut icon" href="../static/img/Meteor.ico">
+        <script src="{{ url_for('static',    filename='js/util.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/main.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/servicos_rest.js') }}" defer></script>
+        <script src="{{ url_for('static',    filename='js/ff7.js') }}" defer></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/ff.css') }}" media="screen" />
+        <meta charset="utf-8">
+    </head>
+    <body class="fundo">
+
+        <img style="display: none;"  id = "right" class = "extra" src = "https://www.dropbox.com/s/1pq4d1ksjv3tuoz/FF7Cursor.png?raw=1">
+
+        <div class="margem_formulario">
+            <fieldset class="bordaFormulario">
+
+            <form action="" id="formulario_de_captura" method="get">
+                
+            <div  class="fonteFormulario">    
+
+                <h1 class="central">Atualizar</h1>   
+
+                <div>
+                    <input type="text" id="cpf" placeholder="Buscar CPF" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
+                </div>
+
+                <div>
+                    <button id="btn_buscar" >Buscar</button>
+                </div>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" maxlength="50" name="nome" id="nome">
+                </div>
+
+                <div>    
+                    <label for="data">Data de Nascimento:</label>  
+                    <input type="date" name="data" id="data" value="2018-07-22" min="1900-01-01" max="2024-12-31"> 
+                </div>
+                
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo">  
+                    <option>Homem</option>  
+                    <option>Mulher</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade">  
+                    <option>Brasilia</option>  
+                    <option>Goias</option>
+                    <option>Minas Gerais</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    </select>
+                </div>
+
+                <div>
+                <label for="uf">UF:</label>
+                <select id="uf" name="uf">  
+                    <option>DF</option>  
+                    <option>GO</option>
+                    <option>MG</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="8" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                </div> 
+                
+            </div>
+            
+
+            <div class="aceitar_cancelar_voltar">                
+                <div  class="fonte">
+                    <aside id="aside">
+                    
+                            <ul id="menu">
+                                <li  id="btn_salvar" number="0">Aceitar</li>
+                                <li id="btn_cancelar" number ="1">Cancelar</li>
+                                <li  number ="2" id="btn_excluir">Excluir</li>
+                                <li onclick=location.href="{{ url_for('index')}}" number ="3" id="btn_voltar">Voltar</li>
+                            </ul>
+            </div>        
+                    </aside>    
+                </div>
+            </form>
+            </fieldset>
+        </div>    
+        </body>
+</html>

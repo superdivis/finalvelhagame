@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Final Velha VII</title>
+        <link rel="shortcut icon" href="../static/img/Meteor.ico">
+        <script src="{{ url_for('static',    filename='js/ff7.js') }}" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/ff.css') }}" media="screen" />
+        <meta charset="UTF-8">
+    </head>
+    <body class="fundo">
+		
+    <img style="display: none;"  id = "right" class = "extra" src = "https://www.dropbox.com/s/1pq4d1ksjv3tuoz/FF7Cursor.png?raw=1">
+
+    <div class="margem_index">
+
+        <div class="body borda">
+
+                <h1>Final Velha VII</h1>
+            
+            <div class="fonte">
+                
+                <aside id="aside">
+                    <ul id="menu">
+                        <li onclick=location.href="{{ url_for('cadastro_novo')}}" number="0">Novo</li>
+                        <li onclick=location.href="{{ url_for('cadastro_atualizar')}}" number="1">Atualizar</li>
+                        <li onclick=location.href="{{ url_for('pontos')}}" number="2">Placar</li>
+                        <li onclick=location.href="{{ url_for('jogar')}}" number="3">Jogar</li>
+                    </ul>
+                </aside>
+
+            </div>     
+       
+        </div>
+   
+    </div>
+        
+    </body>
+</html>

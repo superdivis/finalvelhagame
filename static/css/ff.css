@@ -1,0 +1,756 @@
+  
+  .central{
+    text-align: center;
+  }
+  
+
+.fundo{
+  background-image: url(../img/Meteor.png) ;
+  -webkit-background-size: 50;
+  -moz-background-size: 50;
+  -o-background-size: 50;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 400px -90px;
+  
+
+}
+
+.margem_index{
+  margin-left: 38%;
+}
+
+.margem_formulario{
+  margin-left: 38%;
+}
+
+.margem_placar{
+  margin-left: 20%;
+}
+
+.voltar{
+  margin-top: 5%;
+  margin-left: 45%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  }
+  
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+  body{
+    background-color: black;
+    background-image: url(http://i4.ytimg.com/vi/s1AtwwyxMKc/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: -150px 0;
+    }
+
+    .text-input{
+      width:300px
+    }
+
+    .campoBorda{
+      padding: 1% 1% 1% 1%;
+      margin-left : 5%;
+      width: 30%;
+      list-style: none;
+      background: radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -o-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 8%;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	
+      animation-name: movingRight;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;	
+      
+
+
+    }
+
+
+    .bordaPlacar{
+      margin: 5% 0% 0% -3%;
+      padding: 10px 0px 10px 0%;
+      width: 75%;
+      list-style: none;
+      background: radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -o-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	
+      }
+
+    .bordaFormulario{
+      padding: 20px 0px 20px 0px;
+      margin: 5% 0% 0% -12%;
+      width: 60%;
+      list-style: none;
+      background: radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -o-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	
+
+
+
+      }
+
+
+  .borda{
+    position: absolute;
+      padding: 10px 0px 10px 40px;
+      margin: 3% 0% 0% 1%;
+      width: 24%;
+      list-style: none;
+      background: radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -o-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	
+    }
+    
+    .fonteFormulario{
+      color: #eff1ff;
+      font-weight: normal;
+      margin: 2% 51px;
+      text-shadow: 2px 2px #212421,
+                  1px 1px #212021;
+      font: 150% arial;
+    }
+
+    .contador_1{  
+      top: 5px;
+      display: inline-block;
+      position: relative;
+      left: 5%;
+      font-size: 150%;
+      color: #eff1ff;
+    }
+
+    .contador_2{
+      top: 5px;
+      display: inline-block;
+      position: relative;
+      left: 5%;
+      font-size: 150%;
+      color: #eff1ff;
+    }
+
+    .fonte{
+      color: #eff1ff;
+      font-weight: normal;
+      margin: 2% 51px;
+      text-shadow: 2px 2px #212421,
+                  1px 1px #212021;
+      font: 200% arial;
+      
+    
+    }
+
+    /* Butões */
+    .form_button {
+      background-image: url();
+      background-size: contain;
+      width: 5%;
+      height: 5%;
+      background-position: center;
+      background-repeat: no-repeat;
+      list-style: none;
+
+      background-color: #0053ad;
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15%;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	  
+      padding-left:40%;
+      padding-right:40%;
+      padding-top:40%;
+      padding-bottom:40%;
+    }
+
+    .form_button:active {
+      transform: translateY(2px);
+    }
+
+    .form_button:hover{
+      background-color: #001b85;
+      color: white;
+    }
+
+    .espada_button{
+      background-image: url(../img/Espada.png);
+      background-size: contain;
+      width: 5%;
+      height: 5%;
+      background-position: center;
+      background-repeat: no-repeat;
+      list-style: none;
+      
+      margin-top: 2%;
+      margin-left: 2%;
+
+
+      background-color: #0053ad;
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15%;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	  
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+
+    .espada_button:hover{
+      background-color: #001b85;
+      color: white;
+    }
+
+    .espada_button:active {
+      transform: translateY(2px);
+    }
+
+    .escudo_button{
+      background-image: url(../img/Escudo.png);
+      background-size: contain;
+      width: 5%;
+      height: 5%;
+      background-position: center;
+      background-repeat: no-repeat;
+      list-style: none;
+
+      margin-bottom: 18px;
+      margin-top: 2%;
+      margin-left: 8%;
+
+      background-color: #0053ad;
+      border: 5px solid white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15%;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;	  
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+
+    .escudo_button:hover{
+      background-color: #001b85;
+      color: white;
+    }
+
+    .escudo_button:active {
+      transform: translateY(2px);
+    }
+
+
+
+    header, nav, section, article, aside, footer{
+      font: 29px arial;
+      display:block;
+    }
+    
+    h1{
+      font: bold 28px arial;
+      margin-left: 1%;
+      color: black;
+    }
+    
+    h2{
+      font: bold 20px arial;
+      margin-left: 100px;
+      color:black;
+    }
+    
+    h1, h2{
+      animation-name: appearing;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;	
+    }
+    
+    .screenOff{
+      opacity: 0;
+      position: absolute;
+      width:6000px;
+      height:6000px;
+      background-color: black;
+      animation-name: appearing3;
+      animation-delay: 0s;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-fill-mode: none;	
+      z-index:4;
+    }
+    
+    .screenOn{
+      opacity: 0;
+      position: absolute;
+      width:6000px;
+      height:6000px;
+      background-color: black;
+      animation-name: disappearing;
+      animation-delay: 0s;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-fill-mode: none;	
+      z-index:4;
+    }
+    
+    body{
+      background: black;
+    }
+      
+    #group{
+      text-align: left;
+      color:white;
+    }
+    
+    #controls{
+      position: absolute;
+      margin: -120px 0px 0px 1150px;
+      animation-name: falling;
+      animation-delay: 2s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;	
+      z-index: 0;
+    }
+    
+    #brand{
+      display:block;
+      position: absolute;
+      font: bold 10px arial;
+      margin: 60px 0px 0px 1270px;
+      color: black;
+      animation-name: hanging;
+      animation-delay: 3s;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;	
+      z-index: -1;
+    }
+    
+    #left{
+      opacity: 0;
+      position: absolute;
+      margin: 300px 0px 0px 1200px;
+      animation-name: appearing2;
+      animation-delay: 3s;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: none;	
+      z-index: -1;
+    }
+    
+    #left:hover{
+    cursor:pointer;
+    }
+    
+    #right{
+      opacity: 0;
+      position: absolute;
+      margin: 300px 0px 0px 1352px;
+      animation-name: appearing2;
+      animation-delay: 3s;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: none;
+      z-index: -1;
+    }
+    
+    #right:hover{
+    cursor:pointer;
+    }
+    
+    #instructions{
+      opacity: 0;
+      display: block;
+      position: absolute;
+      font: bold 10px arial;
+      margin: 550px 0px 0px 1158px;
+      color: white;
+      animation-name: appearing2;
+      animation-delay: 6s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: none;	
+      z-index: -1;
+    }
+    
+    #section{
+      position: absolute;
+      margin: 35px 0px 0px 100px;
+      width: 800px;
+      height: 630px;
+      background: radial-gradient(-180px 0px,circle ,#0053ad 300px,#001b85 500px,#000223);
+      background: -moz-radial-gradient(-180px 0px,circle ,#0053ad 300px,#001b85 500px,#000223);
+      background: -webkit-radial-gradient(-180px 0px,circle ,#0053ad 300px,#001b85 500px,#000223);
+      background: -o-radial-gradient(-180px 0px,circle ,#0053ad 300px,#001b85 500px,#000223);
+      border: 5px solid;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      animation-name: movingLeft;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      z-index: 0; 
+    }
+    
+    #aside{
+      position: absolute;
+      margin: -9% 0% 0% 22%;
+      z-index: 3;	
+    }
+    
+    /*Especificações do Menu de Opções*/
+    #menu{
+
+      position: absolute;
+      padding: 13px 155px 16px 85px;
+      width: 250px;
+      list-style: none;
+      background: radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      background: -o-radial-gradient(-180px 0px,circle ,#0053ad 100px,#001b85 350px,#000223);
+      border: 5px solid;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      box-sizing: border-box;     
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      animation-name: movingLeft;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;		  	  
+
+      margin-left: 5%;
+      left: 0px;
+
+
+    }
+    
+    #menu li {
+      line-height:40px;
+      width: 0px;
+    }
+    
+    #menu li:hover{
+      cursor: none;
+    }
+    
+    .selected{
+      position: absolute;
+      margin: 12px 0px 0px -75px;
+      z-index: 1;
+    }
+    
+    .shadow{
+      display: block;
+      width: 1px; 
+      height: 1px; 
+      overflow: hidden;
+      position: absolute;
+      opacity: 0.5;
+      box-shadow: 
+      -68px 50px 2px 1px black,-67px 50px 2px 1px black,-66px 50px 2px 1px black,-65px 50px 2px 1px black,-64px 50px 2px 1px black, 
+      -63px 50px 2px 1px black,-62px 50px 2px 1px black,-61px 50px 2px 1px black,-60px 50px 2px 1px black,-59px 50px 2px 1px black,
+      -58px 50px 2px 1px black,-57px 50px 2px 1px black,-56px 50px 2px 1px black,-55px 50px 2px 1px black,-54px 50px 2px 1px black,
+      -53px 50px 2px 1px black,-52px 50px 2px 1px black,-51px 50px 2px 1px black,-50px 50px 2px 1px black,-49px 50px 2px 1px black,
+      -50px 50px 2px 1px black,-47px 50px 2px 1px black,-46px 50px 2px 1px black,-45px 50px 2px 1px black,-44px 50px 2px 1px black,
+      -43px 50px 2px 1px black,-42px 50px 2px 1px black,-41px 50px 2px 1px black,-40px 50px 2px 1px black,-39px 50px 2px 1px black,
+      -38px 50px 2px 1px black,-37px 50px 2px 1px black,-36px 50px 2px 1px black,-35px 50px 2px 1px black,-34px 50px 2px 1px black,
+      -33px 50px 2px 1px black,-32px 50px 2px 1px black,-31px 50px 2px 1px black,-30px 50px 2px 1px black,-29px 50px 2px 1px black,
+      -28px 50px 2px 1px black,-27px 50px 2px 1px black,-26px 50px 2px 1px black,-25px 50px 2px 1px black,-24px 50px 2px 1px black,
+      -23px 50px 2px 1px black,-22px 50px 2px 1px black,
+    
+        -64px 47px 2px 1px black,-63px 47px 2px 1px black,-62px 47px 2px 1px black,-61px 47px 2px 1px black,-60px 47px 2px 1px black,
+        -59px 47px 2px 1px black,-58px 47px 2px 1px black,-57px 47px 2px 1px black,-56px 47px 2px 1px black,-55px 47px 2px 1px black,
+        -54px 47px 2px 1px black,-53px 47px 2px 1px black,-52px 47px 2px 1px black,-51px 47px 2px 1px black,-50px 47px 2px 1px black,
+      -49px 47px 2px 1px black,-48px 47px 2px 1px black,-47px 47px 2px 1px black,-46px 47px 2px 1px black,-45px 47px 2px 1px black,
+        -44px 47px 2px 1px black,-43px 47px 2px 1px black,-42px 47px 2px 1px black,-41px 47px 2px 1px black,-40px 47px 2px 1px black,
+    
+        -61px 44px 2px 1px black,-60px 44px 2px 1px black,-49px 44px 2px 1px black,-51px 44px 2px 1px black,-50px 44px 2px 1px black, 
+      
+        -64px 53px 2px 1px black,-63px 53px 2px 1px black,-62px 53px 2px 1px black,-61px 53px 2px 1px black,-60px 53px 2px 1px black, 
+        -59px 53px 2px 1px black,-58px 53px 2px 1px black,-57px 53px 2px 1px black,-56px 53px 2px 1px black,-55px 53px 2px 1px black, 
+        -54px 53px 2px 1px black,-53px 53px 2px 1px black,-52px 53px 2px 1px black,-51px 53px 2px 1px black,-50px 53px 2px 1px black,
+      -49px 53px 2px 1px black,-48px 53px 2px 1px black,-47px 53px 2px 1px black,-46px 53px 2px 1px black,-45px 53px 2px 1px black,
+      -44px 53px 2px 1px black,-43px 53px 2px 1px black,-42px 53px 2px 1px black,-41px 53px 2px 1px black,-40px 53px 2px 1px black
+      ;
+    }
+    
+    #time{
+      position:absolute;
+      margin: 530px 0px 0px 0px;
+      width: 250px;
+      height: 101px;
+      background: radial-gradient(-40px -290px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(-40px -290px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(-40px -290px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      background: -o-radial-gradient(-40px -290px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      list-style: none;
+      border: 5px solid;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      animation-name: movingRight;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+    }
+    
+
+    
+    #currentTime{
+      position: absolute;
+      width: 120px;
+      text-align: right;
+      margin-left: 45px;
+    }
+    
+    
+    
+    #footer{
+      position:absolute;
+      margin: 630px 0px 0px 580px;
+      width: 500px;
+      height: 75px;
+      padding: 15px 0px 0px 20px;
+      background: radial-gradient(60px -280px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      background: -moz-radial-gradient(60px -280px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      background: -webkit-radial-gradient(60px -280px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      background: -o-radial-gradient(60px -280px,circle ,#0053ad 280px,#001b85 350px,#000223);
+      border: 5px solid;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      animation-name: movingDown;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      z-index: 3;
+    }
+    
+    /*////////////////////////////////////////////////////////////////////////////////Animation area////////////////////////////////////////////////////////////////////////////////////*/
+    
+      @keyframes movingUp{
+      0%{
+        transform: translate(0px,3900px);
+      }
+    
+      100%{
+        transform: translate(0px,0px);
+      }
+    }
+      
+      @keyframes movingDown{
+      0%{
+        transform: translate(0px,-8000px);
+      }
+    
+      100%{
+        transform: translate(0px,0px);
+      }
+    }
+    
+      @keyframes movingLeft{
+      0%{
+        transform: translate(18500px, 0px);
+      }
+    
+      100%{
+        transform: translate(0px,0px);
+      }
+    }
+    
+      @keyframes movingRight{
+      0%{
+        transform: translate(-18000px, 0px);
+      }
+    
+      100%{
+        transform: translate(0px,0px);
+      }
+    }
+    
+    /*+---------------------------------+*/
+    /*|Luminescencia do Titulo da Pagina|*/
+    /*+---------------------------------+*/
+    @keyframes appearing{
+      25%{
+        text-shadow: 0px 0px 0px black;
+      }
+      
+      50%{
+        color:white;
+        text-shadow: 0px 0px 5px white, 0px 0px 10px rgb(255, 255, 255),0px 0px 15px white,
+        0px 0px 20px white,0px 0px 25px white;
+      }
+      
+      100%{
+        color:white;
+      }
+    }
+    
+    @keyframes appearing2{
+      8%{
+        opacity: 0;
+      }
+      
+      100%{
+        opacity: 1;
+      }
+    }
+    
+    @keyframes appearing3{
+      0% {
+        opacity: 0;
+      }
+      
+      100%{
+        opacity: 1;
+      }
+    }
+    
+    @keyframes disappearing{
+      0%,40% {
+        opacity: 1;
+      }
+      
+      100%{
+        opacity: 0;
+      }
+    }
+    
+    @keyframes falling{
+      0%{
+        transform: translate(0px, 0px);
+        }
+    
+      30%{
+        transform: translate(0px, 91px);
+      }
+    
+      56%{
+        transform: translate(0px, 109px);
+      }
+    
+      74%{
+        transform: translate(0px, 123px);
+      }
+    
+      86%{
+        transform: translate(0px, 133px);
+      }
+    
+      98%{
+        transform: translate(0px, 140px);
+      }
+    
+      10%,44%,64%,80%,92%,100%{
+        transform: translate(0px, 145px);
+      }
+        
+    }
+    
+    @keyframes hanging{
+      0%{
+        transform: translate(0px, 0px);
+            color:white;
+        }
+    
+      10%{
+        transform: rotate(1deg) translate(-4px, 105px);
+      }
+      
+      13%{
+        transform: rotate(2deg) translate(-8px, 145px);
+      }
+    
+      15%{
+        transform:rotate(2deg) translate(-10px, 125px);
+      }
+    
+        22%{
+        transform: rotate(5deg) translate(-20px, 145px);
+      }   
+    
+      38%{
+        transform: rotate(-4deg) translate(15px, 145px);	
+      }
+    
+      55%{
+        transform: rotate(2deg) translate(-5px, 145px);	
+      }
+    
+      65%{
+        transform: rotate(-1deg) translate(2px, 145px);	
+      }
+    
+      80%{
+        transform: rotate(-0deg) translate(-1px, 145px);	
+      }
+    
+      8%,100%{
+        transform: translate(0px, 145px);
+        color:white;
+      }
+    }

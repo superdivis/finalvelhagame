@@ -21,7 +21,7 @@ var modo_solo=document.querySelector("#btn_solo");
 var modo_multiplayer=document.querySelector("#btn_multiplayer");
 
 var g_dados_jogador;
-var ip = 'https://finalvelhagame-c4c8841e9172.herokuapp.com/'
+var ip = 'https://finalvelhagame-c4c8841e9172.herokuapp.com'
 //var ip = '192.168.0.58';
 //var ip = "192.168.15.132"
 var porta ='';

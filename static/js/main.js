@@ -1,6 +1,6 @@
 //+--------------------------------------------------------------------------+
 //| Projeto Final Velha                                                      |
-//| Autor: Bruno Gontijo                                                     |
+//| Autores: Alexandre Santos e Bruno Gontijo                                |
 //| Descrição: Projeto de jogo da velha com css inspirado em final fantasy 7 |
 //| Data fim: 26/08/2024                                                     |
 //+--------------------------------------------------------------------------+

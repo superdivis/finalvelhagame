@@ -5,9 +5,9 @@ from datetime import date
 from finalDAO import * 
 import json
 
-#ip = 'localhost'
+ip = 'localhost'
 #ip='192.168.0.58'
-ip='https://finalvelhagame-c4c8841e9172.herokuapp.com/'
+#ip='https://finalvelhagame-c4c8841e9172.herokuapp.com/'
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)

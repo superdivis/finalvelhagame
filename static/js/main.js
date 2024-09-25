@@ -3,6 +3,7 @@
 //| Autores: Alexandre Santos e Bruno Gontijo                                |
 //| Descrição: Projeto de jogo da velha com css inspirado em final fantasy 7 |
 //| Data fim: 26/08/2024                                                     |
+//| Data produção: 25/09/2024                                                |
 //+--------------------------------------------------------------------------+
 
 //+--------------------------------------------------------------------------------------------------------+

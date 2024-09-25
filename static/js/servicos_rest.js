@@ -13,7 +13,8 @@
 //+-----------------------------+
 function cadastrarJogados(dados_cadatro){
     const xhr = new XMLHttpRequest(dados_cadatro);
-    xhr.open("POST", "http://"+ip+":"+ porta+"/cadastro", true);
+    xhr.open("POST", "http://"+ip+"/cadastro", true);
+    //xhr.open("POST", "http://"+ip+":"+ porta+"/cadastro", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8","Access-Control-Allow-Origin", "*");
     xhr.send(JSON.stringify(dados_cadatro));
 
@@ -30,7 +31,8 @@ function cadastrarJogados(dados_cadatro){
 function atualizar_placar(placar){
     cpf=placar.Cpf
     const xhr = new XMLHttpRequest(placar);
-    xhr.open( "POST", "http://"+ip+":"+porta+"/placar/:"+cpf, true ); // false for synchronous request
+    xhr.open( "POST", "http://"+ip+"/placar/:"+cpf, true ); // false for synchronous request
+    //xhr.open( "POST", "http://"+ip+":"+porta+"/placar/:"+cpf, true ); // false for synchronous request
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8","Access-Control-Allow-Origin", "*");
     console.log(placar)
     xhr.send(JSON.stringify(placar));
@@ -64,7 +66,8 @@ function atualizar_placar(placar){
 function pesquisarJogadorporCPF(cpf){
     const xhr = new XMLHttpRequest(cpf);
     if(cpf!==""){
-        xhr.open("GET", "http://"+ip+":"+porta+"/cpf/"+cpf, true);
+        xhr.open("GET", "http://"+ip+"/cpf/"+cpf, true);
+        //xhr.open("GET", "http://"+ip+":"+porta+"/cpf/"+cpf, true);
         xhr.send();
     }else{
         alert("CPF inválido!");
@@ -99,7 +102,8 @@ function pesquisarJogadorporCPF(cpf){
 //+-----------------------------+
 function tabelaPlacar(){
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://"+ip+":"+porta+"/placar", true);
+    xhr.open("GET", "http://"+ip+"/placar", true);
+    //xhr.open("GET", "http://"+ip+":"+porta+"/placar", true);
     xhr.send();
     xhr.onload= function(){
         if(xhr.status===200){
@@ -160,7 +164,8 @@ function tabelaPlacar(){
 function atualizarJogador(dados_cadatro){
     const xhr = new XMLHttpRequest(dados_cadatro);
     id_jogador=dados_cadatro.id_jogador
-    xhr.open( "PUT",  "http://"+ip+":"+porta+"/cadastro/att/"+id_jogador, true ); // false for synchronous request
+    xhr.open( "PUT",  "http://"+ip+"/cadastro/att/"+id_jogador, true ); // false for synchronous request
+    //xhr.open( "PUT",  "http://"+ip+":"+porta+"/cadastro/att/"+id_jogador, true ); // false for synchronous request
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8","Access-Control-Allow-Origin", "*");
     console.log(dados_cadatro)
     xhr.send(JSON.stringify(dados_cadatro));
@@ -193,7 +198,8 @@ function atualizarJogador(dados_cadatro){
 function deletarJogador(dados_cadatro){
     const xhr = new XMLHttpRequest(dados_cadatro);
     id_jogador=dados_cadatro.id_jogador
-    xhr.open( "DELETE",  "http://"+ip+":"+porta+"/jogador/"+id_jogador, true ); // false for synchronous request
+    xhr.open( "DELETE",  "http://"+ip+"/jogador/"+id_jogador, true ); // false for synchronous request
+    //xhr.open( "DELETE",  "http://"+ip+":"+porta+"/jogador/"+id_jogador, true ); // false for synchronous request
     xhr.send();
     xhr.onload = function(){
         if(xhr.status===200){
